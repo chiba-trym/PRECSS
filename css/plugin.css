@@ -198,3 +198,22 @@
   font-size: .85em;
   padding: 10px;
 }
+
+@media (max-width: 768px){
+
+  .bx-wrapper .bx-prev {
+    left: 5px;
+    border: 10px solid transparent;
+    border-right-color: #fff;
+  }
+  .bx-wrapper .bx-next {
+    right: 5px;
+    border: 10px solid transparent;
+    border-left-color: #fff;
+  }
+
+  .bx-wrapper .bx-pager {
+    bottom: 0;
+  }
+
+}

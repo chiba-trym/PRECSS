@@ -34,4 +34,14 @@
     margin: .3em 0;
   }
 
+  @media (max-width: 768px){
+    &_Ttl{
+      font-size: 1.6rem;
+    }
+
+    &_txt{
+      font-size: 1.2rem;
+    }
+  }
+
 }

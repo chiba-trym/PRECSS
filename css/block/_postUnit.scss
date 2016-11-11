@@ -22,6 +22,10 @@
         margin-right: 0;
       }
 
+      &+.bl_card{
+        margin-top: 0;
+      }
+
     }
   }
   /*__col3*/
@@ -36,6 +40,47 @@
       }
 
     }
+  }
+
+  /*el_blHead*/
+  .el_blHead{
+    text-align: center;
+
+    &:before,
+    &:after{
+      content: "😺";
+      display: inline-block;
+      padding: 0 1%;
+      vertical-align: middle;
+    }
+
+  }
+
+  @media (max-width: 640px){
+
+    /*__col3*/
+    &__col3{
+
+      .bl_card{
+        width: 48%;
+        margin: 0 4% 4% 0;
+
+        &:nth-of-type(3n){
+          margin-right: 4%;
+        }
+
+        &:nth-of-type(2n){
+          margin-right: 0;
+        }
+
+        &+.bl_card{
+          margin-top: 0;
+        }
+
+      }
+
+    }
+
   }
 
 }

@@ -15,7 +15,7 @@ ly_header
     margin: 0 auto;
   }
 
-  @extend %cf
+  @extend %cf;
 
 }
 
@@ -26,7 +26,7 @@ ly_body
   width: 100%;
   max-width: $siteWidth;
   margin: 0 auto 20px;
-  @extend %cf
+  @extend %cf;
 
 }
 
@@ -39,6 +39,13 @@ ly_main
   padding: 2%;
   box-sizing: border-box;
   background-color: #eee;
+
+  @media (max-width: 768px){
+    float: none;
+    width: 100%;
+    margin: 0 0 20px;
+  }
+
 }
 
 /* =========================================================
@@ -50,6 +57,11 @@ ly_side
   padding: 2%;
   box-sizing: border-box;
   background-color: #eee;
+
+  @media (max-width: 768px){
+    float: none;
+    width: 100%;
+  }
 }
 
 
@@ -65,9 +77,17 @@ ly_footer
     width: 100%;
     max-width: $siteWidth;
     margin: 0 auto;
+    box-sizing: border-box;
   }
 
-  @extend %cf
+  @extend %cf;
+
+  @media (max-width: 768px){
+
+    &Inner {
+    padding: 1% 2%;
+    }
+  }
 
 }
 
