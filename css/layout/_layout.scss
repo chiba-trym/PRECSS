@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+/* =========================================================
+ly_header
+========================================================= */
+.ly_header {
+  width: 100%;
+  margin: 0 0 20px 0;
+  padding: 1% 0;
+  border-bottom: 3px solid #5cb531;
+
+  &Inner {
+    width: 100%;
+    max-width: $siteWidth;
+    margin: 0 auto;
+  }
+
+  @extend %cf
+
+}
+
+/* =========================================================
+ly_body
+========================================================= */
+.ly_body{
+  width: 100%;
+  max-width: $siteWidth;
+  margin: 0 auto 20px;
+  @extend %cf
+
+}
+
+/* =========================================================
+ly_main
+========================================================= */
+.ly_main{
+  float: left;
+  width: 68%;
+  padding: 2%;
+  box-sizing: border-box;
+  background-color: #eee;
+}
+
+/* =========================================================
+ly_side
+========================================================= */
+.ly_side{
+  float: right;
+  width: 30%;
+  padding: 2%;
+  box-sizing: border-box;
+  background-color: #eee;
+}
+
+
+/* =========================================================
+ly_footer
+========================================================= */
+.ly_footer{
+  width: 100%;
+  padding: 1% 0;
+  background-color: #5cb531;
+
+  &Inner {
+    width: 100%;
+    max-width: $siteWidth;
+    margin: 0 auto;
+  }
+
+  @extend %cf
+
+}
+

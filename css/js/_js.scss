@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+.js_slider{
+
+  padding: 0;
+
+  &_inner{
+
+  }
+
+  &_item{
+    img{
+      width: 100%;
+      height: auto !important;
+      vertical-align: top;
+    }
+  }
+
+}

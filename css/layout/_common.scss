@@ -1,0 +1,76 @@
+@charset "UTF-8";
+@import "_vars.scss";
+/* =========================================================
+DEFAULT STYLE
+========================================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font: 500 1.4rem/1.6 $sansSerif;
+  color: $fontColor;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  font-size: 100%;
+  word-break: break-all;
+}
+
+p {
+  margin-bottom: 1em;
+  word-break: break-all;
+}
+
+ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0px;
+}
+
+form label {
+  cursor: pointer;
+}
+
+@include linkColor($linkColor);
+
+// 商品リンク用リセット
+// a[href^="x-apple-data-detectors://"] {
+  //   display: inline;
+  //   pointer-events: none;
+  // }
+
+.fadeAlpha {
+  &.over * {
+    opacity: .7;
+  }
+
+  &.out * {
+    opacity: 1;
+    transition: opacity .2s ease-in;
+  }
+}
+
+//このエリアはサンプルです。削除してください
+// .example{
+  //   @extend %cf;
+  // }
+
+/* =========================================================
+CLEARFIX
+========================================================= */
+@include cf;

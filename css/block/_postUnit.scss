@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+.bl_postUnit{
+  width: 100%;
+  margin: 0 0 20px 0;
+  padding: 1%;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  letter-spacing: -.4em;
+
+  > *{
+    letter-spacing: normal;
+  }
+  /*__col2*/
+  &__col2{
+
+    .bl_card{
+      width: 48%;
+      margin: 0 4% 4% 0;
+
+      &:nth-of-type(2n){
+        margin-right: 0;
+      }
+
+    }
+  }
+  /*__col3*/
+  &__col3{
+
+    .bl_card{
+      width: 32%;
+      margin: 0 2% 2% 0;
+
+      &:nth-of-type(3n){
+        margin-right: 0;
+      }
+
+    }
+  }
+
+}

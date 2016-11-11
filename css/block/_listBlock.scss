@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+.bl_listBlock {
+
+  &_item {
+    display: inline-block;
+    width: 100%;
+    margin: 0 0 10px;
+    font-size: 1.6rem;
+    word-break: break-all;
+
+    &:before {
+      content: "😺";
+      display: inline-block;
+      margin-right: 5px;
+    }
+
+  }
+}
